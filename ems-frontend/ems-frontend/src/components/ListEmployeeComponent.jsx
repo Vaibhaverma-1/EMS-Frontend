@@ -1,9 +1,8 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { listEmployees, deleteEmployee } from "../services/EmployeeService";
 import { useNavigate } from "react-router-dom";
 import { FiPlus, FiEdit2, FiTrash2, FiAlertCircle } from "react-icons/fi";
+import { FaLeaf } from "react-icons/fa";
 
 const ListEmployeeComponent = () => {
   const [employees, setEmployees] = useState([]);

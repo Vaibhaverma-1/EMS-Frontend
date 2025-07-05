@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout";
 import ListEmployeeComponent from "./components/ListEmployeeComponent";
-import EmployeeComponent from "./components/EmployeeComponent";
+import Form from "./components/Form"; // employee form component
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/employees" replace />} />
           <Route path="/employees" element={<ListEmployeeComponent />} />
-          <Route path="/add-employee" element={<EmployeeComponent />} />
-          <Route path="/edit-employee/:id" element={<EmployeeComponent />} />
+          <Route path="/add-employee" element={<Form />} />
+          <Route path="/edit-employee/:id" element={<Form />} />
           <Route path="*" element={<Navigate to="/employees" replace />} />
         </Routes>
       </Layout>
